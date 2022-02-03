@@ -1,19 +1,23 @@
 // Your JS goes here
-
+document.body.style.margin = "0px";
 let mainDiv = document.createElement("div");
 document.body.appendChild(mainDiv);
 mainDiv.id = "container";
 mainDiv.style.width = "100%";
-mainDiv.style.position = "absolute";
+mainDiv.style.height = "100%";
+//mainDiv.style.position = "absolute";
 mainDiv.style.backgroundImage =
-  "linear-gradient(135deg, rgba(3,3,252,.7), rgba(255,0,0,.7))";
+  "linear-gradient(135deg, rgba(3,3,252,.9), rgba(255,0,0,.7))";
+mainDiv.style.display = "flex";
+mainDiv.style.flexWrap = "wrap";
+// mainDiv.style.flexDirection = "row";
 
 let div = document.createElement("div");
+
 div.style.width = "11.1%";
 div.style.cssFloat = "left";
 div.style.paddingBottom = "11.1%";
-div.style.position = "relative";
-div.style.zIndex = "-1";
+//div.style.position = "relative";
 for (let i = 0; i < 63; i++) {
   mainDiv.appendChild(div.cloneNode(true));
 }
@@ -41,7 +45,7 @@ for (let i = 0; i < 63; i++) {
 
 document
   .querySelectorAll("div:nth-child(odd)")
-  .forEach((div) => (div.style.backgroundColor = "rgba(33,33,33,.9"));
+  .forEach((div) => (div.style.backgroundColor = "rgba(33,33,33,.7"));
 document
   .querySelectorAll("div:nth-child(even)")
   .forEach((div) => (div.style.backgroundColor = "rgba(255,255,255,.1)"));
