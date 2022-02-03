@@ -1,4 +1,5 @@
 // Your JS goes here
+document.body.style.margin = "0px";
 let div = document.createElement("div");
 div.style.width = "11.1%";
 div.style.cssFloat = "left";
