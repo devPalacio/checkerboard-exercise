@@ -1,9 +1,9 @@
 // Your JS goes here
 document.body.style.margin = "0px";
 let div = document.createElement("div");
-div.style.width = "11.1%";
+div.style.width = "12.5%";
 div.style.cssFloat = "left";
-div.style.paddingBottom = "11.1%";
+div.style.paddingBottom = "12.5%";
 for (let i = 0; i < 72; i++) {
   document.body.appendChild(div.cloneNode(true));
 }
@@ -38,4 +38,6 @@ function disco() {
 }
 disco();
 setInterval(disco, 2000);
-audio.play();
+document.body.addEventListener("click", function () {
+  audio.play();
+});
